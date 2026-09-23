@@ -68,6 +68,8 @@ const conteudo2 = presente2.querySelector(".conteudo-presente");
 // Quando clicar na caixinha do Presente 2
 presente2.querySelector(".caixa").addEventListener("click", function () {
 
+    alert("FUNCIONOU O PRESENTE 2! 🎁💗");
+
     conteudo2.style.display = "block";
 
 });
