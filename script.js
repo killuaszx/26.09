@@ -57,3 +57,17 @@ botaoProximo.addEventListener("click", function (event) {
     }
 
 });
+
+// =========================
+// PRESENTE 2
+// =========================
+
+const presente2 = document.getElementById("presente2");
+const conteudo2 = presente2.querySelector(".conteudo-presente");
+
+// Quando clicar na caixinha do Presente 2
+presente2.querySelector(".caixa").addEventListener("click", function () {
+
+    conteudo2.style.display = "block";
+
+});
