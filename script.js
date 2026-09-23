@@ -1,33 +1,59 @@
 // =========================
-// PRESENTES
+// PRESENTE 1
 // =========================
 
-// Seleciona todos os presentes
-const presentes = document.querySelectorAll(".presente");
+const presente1 = document.getElementById("presente1");
+const conteudo1 = presente1.querySelector(".conteudo-presente");
+
+const numeroMotivo = document.getElementById("numero-motivo");
+const textoMotivo = document.getElementById("texto-motivo");
+const botaoProximo = document.getElementById("proximo-motivo");
 
 
-// Para cada presente...
-presentes.forEach((presente) => {
+// 5 coisas que eu amo na minha mãe
+const motivos = [
+    "Seu primeiro motivo vai aparecer aqui. 💗",
+    "Seu segundo motivo vai aparecer aqui. 🌷",
+    "Seu terceiro motivo vai aparecer aqui. 🌸",
+    "Seu quarto motivo vai aparecer aqui. 🩷",
+    "Seu quinto motivo vai aparecer aqui. 🎀"
+];
 
-    // Quando clicar nele
-    presente.addEventListener("click", () => {
 
-        // Procura o conteúdo escondido daquele presente
-        const conteudo = presente.querySelector(".conteudo-presente");
+// Começamos pelo primeiro motivo
+let motivoAtual = 0;
 
-        // Se estiver escondido...
-        if (conteudo.style.display !== "block") {
 
-            // Mostra o conteúdo
-            conteudo.style.display = "block";
+// Quando clicar na caixinha do presente
+presente1.querySelector(".caixa").addEventListener("click", function () {
 
-        } else {
+    conteudo1.style.display = "block";
 
-            // Se já estiver aberto, fecha
-            conteudo.style.display = "none";
+});
 
-        }
 
-    });
+// Quando clicar no botão "Próximo"
+botaoProximo.addEventListener("click", function (event) {
+
+    event.stopPropagation();
+
+    motivoAtual++;
+
+    if (motivoAtual < motivos.length) {
+
+        numeroMotivo.textContent = `${motivoAtual + 1}/5`;
+
+        textoMotivo.textContent = motivos[motivoAtual];
+
+    } else {
+
+        numeroMotivo.textContent = "💗";
+
+        textoMotivo.textContent =
+            "E essas são só algumas das infinitas coisas que eu amo em você. Feliz aniversário, mãe! 🌷";
+
+        botaoProximo.style.display = "none";
+
+    }
 
 });
