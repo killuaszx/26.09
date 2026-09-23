@@ -12,11 +12,11 @@ const botaoProximo = document.getElementById("proximo-motivo");
 
 // 5 coisas que eu amo na minha mãe
 const motivos = [
-    "Seu primeiro motivo vai aparecer aqui. 💗",
-    "Seu segundo motivo vai aparecer aqui. 🌷",
-    "Seu terceiro motivo vai aparecer aqui. 🌸",
-    "Seu quarto motivo vai aparecer aqui. 🩷",
-    "Seu quinto motivo vai aparecer aqui. 🎀"
+    "Amo que nós somos muito mais do que mãe e filha. Somos melhores amigas! 💗",
+    "Amo que você é linda e eu puxei de você KKKKK. 🎀",
+    "Amo o quanto você é atenciosa e sempre cuida de mim. 🌷",
+    "Amo que, mesmo cansada, você sempre arruma um tempinho para nós. 🩷",
+    "E, por fim, amo que você é muito especial e única, sempre cheia de luz. ✨"
 ];
 
 
