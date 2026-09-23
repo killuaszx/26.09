@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff7f9;
+    color: #6b4b52;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+/* =========================
+   FUNDO
+========================= */
+
+body::before {
+    content: "🌸  🌷  ✿  🌸  🌷  ✿  🌸  🌷";
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    font-size: 22px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    color: #d98799;
+    margin-bottom: 10px;
+}
+
+main > p {
+    font-size: 16px;
+    color: #9b747c;
+    margin-bottom: 55px;
+}
+
+
+/* =========================
+   PRESENTES
+========================= */
+
+.presentes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   CADA PRESENTE
+========================= */
+
+.presente {
+    width: 300px;
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #f3ccd5;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(217, 135, 153, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.presente:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(217, 135, 153, 0.2);
+}
+
+
+/* =========================
+   CAIXINHA
+========================= */
+
+.caixa {
+    width: 120px;
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7b6c5;
+
+    border-radius: 18px;
+
+    font-size: 55px;
+
+    box-shadow: 0 8px 15px rgba(217, 135, 153, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.presente:hover .caixa {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+
+/* =========================
+   TÍTULOS DOS PRESENTES
+========================= */
+
+.presente h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #875963;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTEÚDO DOS PRESENTES
+========================= */
+
+.conteudo-presente {
+    display: none;
+    margin-top: 20px;
+}
+
+.conteudo-presente p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.conteudo-presente img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 5px solid #fff0f3;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   ÁREA DA MÚSICA
+========================= */
+
+.musica {
+    margin: 70px auto 0;
+
+    max-width: 600px;
+
+    padding: 30px;
+
+    background: #fff;
+    border: 1px solid #f3ccd5;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(217, 135, 153, 0.1);
+}
+
+.musica h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #d98799;
+
+    margin-bottom: 10px;
+}
+
+.musica p {
+    font-size: 14px;
+    color: #9b747c;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BOTÃO DA MÚSICA
+========================= */
+
+.musica a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #e9a2b2;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.musica a:hover {
+    background: #d98799;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 25px;
+
+    font-size: 13px;
+
+    color: #b88b94;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 50px 18px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .presentes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presente {
+        width: 100%;
+        max-width: 330px;
+    }
+
+}
