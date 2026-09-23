@@ -73,3 +73,16 @@ presente2.querySelector(".caixa").addEventListener("click", function () {
     conteudo2.style.display = "block";
 
 });
+
+// =========================
+// PRESENTE 3
+// =========================
+
+const presente3 = document.getElementById("presente3");
+const conteudo3 = presente3.querySelector(".conteudo-presente");
+
+presente3.querySelector(".caixa").addEventListener("click", function () {
+
+    conteudo3.style.display = "block";
+
+});
